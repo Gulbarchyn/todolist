@@ -1,0 +1,48 @@
+.header {
+    background-color: lightslategray;
+    text-align: center;
+    padding: 5px;
+    font-size: large;
+
+}
+
+.inputs-container {
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.input {
+    padding: 8px;
+    font-size: medium;
+    margin: 0 5px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.todo-list {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.done-todo {
+background-color: lightpink;
+}
+
+.not-done-todo {
+    background-color: lavenderblush;
+}
+
+.todo-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.333%;
+    padding: 3px;
+    border: 2px solid black;
+    word-break: break-all;
+}
