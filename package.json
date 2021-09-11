@@ -9,6 +9,8 @@
     "server": "nodemon server/server.js",
     "client": "yarn --cwd client run start",
     "client:build": "cross-env NODE_ENV=production yarn --cwd client run build",
+    "client:install": "yarn --cwd client install",
+    "heroku-postbuild": "yarn run client:install && yarn run client:build",
     "dev": "cross-env NODE_ENV=development concurrently \"yarn run server\" \"yarn run client\" "
   },
   "dependencies": {
@@ -21,6 +23,9 @@
     "http-proxy-middleware": "^2.0.1",
     "nanoid": "^3.1.25",
     "nodemon": "^2.0.12",
-    "react-router-dom": "^5.2.0"
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0"
   }
 }
